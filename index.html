@@ -127,20 +127,35 @@
                 <button onclick="filterByCategory('Organization')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
                     📊 Organization (222)
                 </button>
-                <button onclick="filterByCategory('Emergency Response')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
-                    🚨 Emergency (12)
+                <button onclick="filterByCategory('Maps')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    🗺️ Maps (190)
                 </button>
-                <button onclick="filterByCategory('Demographics')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
-                    👥 Demographics (59)
+                <button onclick="filterByCategory('Other')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    📦 Other (125)
                 </button>
                 <button onclick="filterByCategory('Geography')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
-                    🗺️ Geography (105)
+                    🌍 Geography (105)
                 </button>
                 <button onclick="filterByCategory('Weather')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
                     ⛈️ Weather (103)
                 </button>
+                <button onclick="filterByCategory('Demographics')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    👥 Demographics (59)
+                </button>
+                <button onclick="filterByCategory('Political Boundaries')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    🏛️ Political (54)
+                </button>
+                <button onclick="filterByCategory('Land Management')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    🌲 Land (52)
+                </button>
                 <button onclick="filterByCategory('Federal Resources')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
-                    🏛️ Federal (17)
+                    🏢 Federal (17)
+                </button>
+                <button onclick="filterByCategory('Emergency Response')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    🚨 Emergency (12)
+                </button>
+                <button onclick="filterByCategory('GIS Tools')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition text-sm font-medium">
+                    🛠️ GIS Tools (10)
                 </button>
             </div>
         </div>
@@ -7104,7 +7119,8 @@ function filterByCategory(category) {
 
     // Update button styles
     document.querySelectorAll('button[onclick^="filterByCategory"]').forEach(btn => {
-        if (btn.textContent.includes(category) || (category === 'all' && btn.textContent.includes('All'))) {
+        const btnCategory = btn.getAttribute('onclick').match(/filterByCategory\('(.+?)'\)/)?.[1];
+        if (btnCategory === category) {
             btn.classList.remove('bg-gray-100', 'text-gray-700');
             btn.classList.add('bg-red-600', 'text-white');
         } else {
