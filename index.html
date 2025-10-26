@@ -7103,10 +7103,10 @@ function displayResults(results) {
                         <h3 class="text-base font-semibold text-gray-900 mb-1">${title}</h3>
                         <div class="text-xs text-gray-500 font-mono mt-2">${resource.url}</div>
                     </div>
-                    <a href="${resource.url}" target="_blank"
-                       class="ml-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition text-sm font-medium whitespace-nowrap">
+                    <button onclick="window.open('${resource.url}', 'resourceWindow', 'width=1200,height=800,resizable=yes,scrollbars=yes')"
+                       class="ml-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition text-sm font-medium whitespace-nowrap cursor-pointer">
                         Open Resource →
-                    </a>
+                    </button>
                 </div>
             </div>
         `;
