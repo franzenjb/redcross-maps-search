@@ -1,0 +1,81 @@
+CONFIRMED BROKEN LINKS (17 unique URLs)
+============================================================
+
+HTTP 404
+----------------------------------------
+❌ U.S. Census Bureau Maps
+   https://www.census.gov/geo/www/maps/
+   Category: Demographics | States: National
+
+❌ Physical Features
+   https://maps.redcross.org/website/Maps/Images/California/pagegen_car.pdf
+   Category: Geography | States: CA
+
+❌ State Map w/FIPS
+   https://maps.redcross.org/website/Maps/Images/Mississippi/mi_cnty.pdf
+   Category: Maps | States: MS
+
+❌ ARC Geography Shapefile
+   https://maps.redcross.org/website/Maps/Images/PuertoRico/PR.zip
+   Category: Other | States: PR
+
+❌ American Samoa
+   https://maps.redcross.org/website/links/ARC_Disaster_Links_AS.html
+   Category: Other | States: National
+
+❌ CNMI
+   https://maps.redcross.org/website/links/ARC_Disaster_Links_MP.html
+   Category: Other | States: National
+
+❌ Guam
+   https://maps.redcross.org/website/links/ARC_Disaster_Links_GU.html
+   Category: Other | States: National
+
+❌ Tutuila - Towns
+   https://maps.redcross.org/website/Maps/Images/Samoa/tutuila_towns
+   Category: Other | States: National
+
+❌ Congressional Dist.
+   https://maps.redcross.org/website/Maps/Images/Utah/pagecgd109_ut2.pdf
+   Category: Political Boundaries | States: UT
+
+❌ NWS County Warning Forecast Areas
+   https://www.weather.gov/media/pimar/CWAbyState/ca_cwfa.pdf
+   Category: Weather | States: National
+
+❌ NWS County Warning Forecast Areas
+   https://www.weather.gov/media/pimar/CWAbyState/tx_cwfa.pdf
+   Category: Weather | States: National
+
+GETADDRINFO ENOTFOUND MAPS.NGDC.NOAA.GOV
+----------------------------------------
+❌ NOAA Hazards Viewer
+   https://maps.ngdc.noaa.gov/viewers/hazards/
+   Category: Federal Resources | States: National
+
+HTTP 403
+----------------------------------------
+❌ Untitled
+   https://www.fema.gov/disaster/declarations
+   Category: Federal Resources | States: National
+
+❌ Rand McNally Maps
+   https://maps.randmcnally.com/
+   Category: Other | States: National
+
+PARSE ERROR: DATA AFTER `CONNECTION: CLOSE`
+----------------------------------------
+❌ USGS National Map
+   https://nationalmap.gov/
+   Category: Other | States: National
+
+SOCKET HANG UP
+----------------------------------------
+❌ American Fact Finder
+   https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+   Category: Other | States: National
+
+❌ Travel.com Time Zone Map
+   https://www.travel.com.hk/region/timezone.htm
+   Category: Other | States: National
+
